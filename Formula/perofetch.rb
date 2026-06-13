@@ -1,8 +1,8 @@
 class Perofetch < Formula
   desc "Clean terminal system fetch with a PERO banner in a warm sunset gradient"
   homepage "https://github.com/Yoshitd/perofetch"
-  url "https://github.com/Yoshitd/perofetch/archive/refs/tags/v1.0.0.tar.gz"
-  sha256 "cde5cd3f7e3d361efc439258cb77b6f2fcc2470ce309658c7636eaadccf9eed3"
+  url "https://github.com/Yoshitd/perofetch/archive/refs/tags/v1.0.1.tar.gz"
+  sha256 "8346ad78bd32b3e89a1ce08a1f1aa96c2e32ea6538df6c7eaf27f6b53740b9aa"
   license "MIT"
 
   def install
@@ -10,6 +10,6 @@ class Perofetch < Formula
   end
 
   test do
-    assert_match "perofetch 1.0.0", shell_output("#{bin}/perofetch -v")
+    assert_match "perofetch 1.0.1", shell_output("#{bin}/perofetch -v")
   end
 end
